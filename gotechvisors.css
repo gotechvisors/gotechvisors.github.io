@@ -1,26 +1,17 @@
 body {
-  background-color: gray;
+  background-color: white;
 }
 h1 {
-  color: yellow;
+  color: blue;
 }
 p {
-  color: white;
+  color: black;
 }
 a:link {
   color: blue;
 }
 a:visited {
   color: purple;
-}
-div {
- color: white;
-}
-tr {
- color: white;
-}
-tr {
- color: white;
 }
 
 ul {
