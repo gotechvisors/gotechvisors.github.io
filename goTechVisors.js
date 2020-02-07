@@ -1,13 +1,6 @@
-var elements = stripe.elements();
-var prButton = elements.create('paymentRequestButton', {
-    paymentRequest: paymentRequest,
+
+
+(document).ready(function () {
+    ("#navbar-frame").load("/nav.html");
 });
 
-// Check the availability of the Payment Request API first.
-paymentRequest.canMakePayment().then(function (result) {
-    if (result) {
-        prButton.mount('#payment-request-button');
-    } else {
-        document.getElementById('payment-request-button').style.display = 'none';
-    }
-});
