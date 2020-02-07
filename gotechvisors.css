@@ -7,8 +7,11 @@ h1 {
 p {
   color: white;
 }
-a {
-  color: red;
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
 }
 div {
  color: white;
