@@ -5,7 +5,9 @@ h1 {
   color: blue;
 }
 p {
-  color: black;
+	color: black;
+	margin: 0;
+	padding: 0;
 }
 a:link {
   color: blue;
