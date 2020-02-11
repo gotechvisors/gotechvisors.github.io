@@ -19,10 +19,12 @@ a:visited {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
+    margin: 0;
   }
   
   li {
     float: left;
+    margin: 0;
   }
   
   li a {
@@ -31,9 +33,11 @@ a:visited {
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
+    margin: 0;
   }
   
   li a:hover {
     background-color: #111;
+    margin: 0;
   }
 
