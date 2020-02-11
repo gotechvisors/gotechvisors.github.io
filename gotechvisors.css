@@ -24,7 +24,6 @@ a:visited {
   
   li {
     float: left;
-    margin: 0;
   }
   
   li a {
@@ -33,11 +32,9 @@ a:visited {
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
-    margin: 0;
   }
   
   li a:hover {
     background-color: #111;
-    margin: 0;
   }
 
