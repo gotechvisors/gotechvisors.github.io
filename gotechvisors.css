@@ -15,7 +15,7 @@ a:link {
 a:visited {
   color: purple;
 }
-  ul {
+  /* ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
@@ -35,5 +35,5 @@ a:visited {
   
   li a:hover {
     background-color: #111;
-  }
+  } */
 
