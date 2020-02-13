@@ -15,8 +15,9 @@ a:link {
 a:visited {
   color: purple;
 }
-/* .jumbotron {
+#bigboulder {
   padding: 0px;
   margin: 0px;
   padding-top: 0px;
-} */
+  margin-bottom:0px;
+}
