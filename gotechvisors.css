@@ -22,10 +22,12 @@ a:visited {
   color: purple;
 }
 .jumbotron {
-  padding-top: 0px;
-  margin-bottom:0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .navbar {
-  padding-top: 0px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 } 
