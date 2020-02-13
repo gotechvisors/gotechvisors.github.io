@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
 }
@@ -15,9 +21,12 @@ a:link {
 a:visited {
   color: purple;
 }
-#bigboulder {
+.jumbotron {
+  margin-bottom:0px;
+}
+/* .navbar {
   padding: 0px;
   margin: 0px;
   padding-top: 0px;
   margin-bottom:0px;
-}
+} */
