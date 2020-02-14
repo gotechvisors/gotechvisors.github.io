@@ -31,3 +31,11 @@ a:visited {
   margin-bottom: 0px;
   margin-top: 0px;
 } 
+
+p {
+  margin-left: 60px;
+}
+
+li {
+  margin-left: 60px;
+}
