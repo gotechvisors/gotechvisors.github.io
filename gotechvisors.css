@@ -71,6 +71,7 @@ li {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  padding: 10px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -101,11 +102,12 @@ li {
   background-color: white;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 900px)
 {
   .cardcontainer {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
