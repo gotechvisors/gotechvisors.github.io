@@ -93,6 +93,15 @@ li {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px)
+body {
+  .cardcontainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .namelabel {
   text-align: center;
 }
