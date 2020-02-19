@@ -1,21 +1,7 @@
-/* *{
-  margin: 0;
-  padding: 0;
+*{
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-}
-h1 {
-  color: blue;
-}
-a:link {
-  color: blue;
-}
-a:visited {
-  color: purple; 
-} */
 p {
 	color: black;
 	margin: 0;
@@ -40,6 +26,15 @@ li {
   margin-left: 10px;
 }
 
+.indexphotos {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+}
+
+.sectionhead3 {
+  margin: 20px;
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -71,7 +66,6 @@ li {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  padding: 10px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -105,9 +99,10 @@ li {
 @media screen and (max-width: 900px)
 {
   .cardcontainer {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
   }
 }
