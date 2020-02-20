@@ -105,4 +105,9 @@ li {
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .indexphotos {
+    width: 75%;
+    height: 75%;
+  }
 }
