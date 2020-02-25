@@ -111,6 +111,53 @@ li {
     100% { opacity: 0; }
 }
 
+/* Home Page Workflow Stylings */
+.flowbigcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.flowcontainer {
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.flowcontainer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0;
+}
 /* Team Page */
 /* *********************************************************************************************************************************** */
 
@@ -137,6 +184,9 @@ li {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(90deg);
+}
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
@@ -158,6 +208,11 @@ li {
   background-color: silver;
   color: black;
   transform: rotateY(180deg);
+}
+.flip-card-back2 {
+  background-color:white;
+  color: black;
+  transform: rotateY(90deg);
 }
 
 .cardcontainer {
