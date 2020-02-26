@@ -34,7 +34,7 @@
                               <li><a href="#flow2">Exploratory</a></li>
                               <li><a href="#flow3">Get the Interview</a></li>
                               <li><a href="#flow4">Tech Interviews</a></li>
-                              <li><a href="#flow5">Salary Negotiation</a></li>
+                              <li><a href="#flow5">Negotiations</a></li>
                             </ul>
                           </li> 
                         </li>
@@ -66,12 +66,22 @@
         <br>
         <p>If you would like to contribute or support us, please send an email using the form above. Otherwise, please consider donating to sponsor </p>
         <button onclick="payNow() ">Click Here to contribute</button>
-<footer>
-        <p>Posted by: Adam Wong</p>
-        <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
-        <p>The git repo for this site is located
-                <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
-        </p>
-</footer>
+        <footer>
+                <div class="w3-container">
+                  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Who made this page?</button>
+                  <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <p>Posted by: Adam Wong</p>
+                        <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
+                        <p>The git repo for this site is located
+                          <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
+                        </p>        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
 </body>
 </html>
