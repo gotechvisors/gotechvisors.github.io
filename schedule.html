@@ -13,12 +13,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./gotechvisors.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="gotechvisors.js"></script>
 </head>
 <body>
     <div class="jumbotron text-center">
-            <h1> Contact Us </h1>
-            <h7> Please email us directly at <a href="mailto:goTechVisors@gmail.com?Subject=New%20Inquiry">goTechVisors@gmail.com</a>, or feel free to use the form below </h7>
+            <h1> Schedule Consultation</h1>
+            <h7> Schedule a session for this week</h7>
     </div>
     <nav class="sticky-top navbar navbar-expand-sm bg-dark navbar-dark">
       <ul class="navbar-nav">
@@ -65,12 +66,22 @@
     <p>If you would like to contribute or support us, please send an email using the form above. Otherwise, please consider donating to sponsor </p>
     <button onclick="payNow() ">Click Here to contribute</button>
 
-<footer>
-  <p>Posted by: Adam Wong</p>
-  <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
-  <p>The git repo for this site is located
-    <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
-  </p>
-</footer>
+    <footer>
+      <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Who made this page?</button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <p>Posted by: Adam Wong</p>
+              <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
+              <p>The git repo for this site is located
+                <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
+              </p>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -13,6 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="./gotechvisors.css">
   <script src="gotechvisors.js"></script>
 </head>
@@ -66,9 +67,13 @@
       </h2>
     </div>
     </section>
+    <br>
+    <br>
+    <br id="flow1">
+    <br>
 <p class="center">Techvisors is a team of dedicated professionals who will coach you through the process of attaining a role int tech.</p>
-<img class="indexphotos" src="./images/MainFlow.jpeg" alt="Avatar">
-<H2 class="sectionhead3 center" id="flow1">Resume Reviews</H2>
+<img class="indexphotos2 zoom" src="./images/MainFlow.jpeg" alt="Avatar">
+<H3 class="sectionhead3 center">Resume Reviews</H3>
 <div class="flowbigcontainer">
   <div class="flowcontainer">
   <img src="./images/Flow1.jpeg" alt="Avatar" class="image">
@@ -85,8 +90,9 @@
 </div>
 <br>
 <br>
-
-<H2 class="sectionhead3 center" id="flow2">Exploratory Conversations</H2>
+<br id="flow2">
+<br>
+<H3 class="sectionhead3 center">Exploratory Conversations</H3>
 <div class="flowbigcontainer">
   <div class="flowcontainer">
   <img src="./images/Flow2.jpeg" alt="Avatar" class="image">
@@ -103,8 +109,9 @@
 </div>
 <br>
 <br>
-
-<H2 class="sectionhead3 center" id="flow3">Get the Interview</H2>
+<br id="flow3">
+<br>
+<H3 class="sectionhead3 center">Get the Interview</H3>
 <div class="flowbigcontainer">
   <div class="flowcontainer">
     <img src="./images/Flow3.jpeg" alt="Avatar" class="image">
@@ -121,8 +128,9 @@
 </div>
 <br>
 <br>
-
-<H2 class="sectionhead3 center" id="flow4">Tech Interviews</H2>
+<br id="flow4">
+<br>
+<H3 class="sectionhead3 center">Tech Interviews</H3>
 <div class="flowbigcontainer">
   <div class="flowcontainer">
     <img src="./images/Flow4.jpeg" alt="Avatar" class="image">
@@ -139,8 +147,9 @@
 </div>
 <br>
 <br>
-
-<H2 class="sectionhead3 center" id="flow5">Salary Negotiations</H2>
+<br id="flow5">
+<br>
+<H3 class="sectionhead3 center">Negotiations</H3>
 <div class="flowbigcontainer">
   <div class="flowcontainer">
     <img src="./images/Flow5.jpeg" alt="Avatar" class="image">
@@ -157,15 +166,24 @@
 </div>
 <br>
 <br>
-
-
-
+<br>
+<br>
 <footer>
-  <p>Posted by: Adam Wong</p>
-  <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
-  <p>The git repo for this site is located
-    <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
-  </p>
+  <div class="w3-container">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Who made this page?</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Posted by: Adam Wong</p>
+          <p>Contact information: <a href="mailto:adamjkwong@gmail.com">adamjkwong@gmail.com</a>.</p>
+          <p>The git repo for this site is located
+            <button onclick="alert('https://github.com/gotechvisors/gotechvisors.github.io');">Here</button>     
+          </p>        
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
