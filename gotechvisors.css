@@ -28,6 +28,23 @@
   text-align: center;
 } 
 
+.navbar-nav {
+  width: 100%;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  border: 5px ridge white;
+}
+
+a.active {
+  background-color: #0486db;
+  color: white;
+  padding: 0.5rem;
+}
+
 .zoom {
   padding: 50px;
   background-color: transparent;
