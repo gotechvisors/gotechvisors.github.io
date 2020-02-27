@@ -48,23 +48,24 @@
                 </li>
         </ul>
         </nav>
-        <br>
-        <br>
         <img class="indexphotos2 zoom" src="./images/MainFlow.jpeg" alt="Avatar">
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <h2 class="center">Which sessions would you be interested in scheduling?</h2>
-        <br/>
-        <p class="center">Resume Review: <input type="checkbox" id="myCheck" onclick="scheduleFunction()"></p>
-        <p class="center">Exploratory Session: <input type="checkbox" id="myCheck" onclick="scheduleFunction()"></p>
-        <p class="center">Get the Interview: <input type="checkbox" id="myCheck" onclick="scheduleFunction()"></p>
-        <p class="center">Tech Interviews <input type="checkbox" id="myCheck" onclick="scheduleFunction()"></p>
-        <p class="center">Salary Negotiations: <input type="checkbox" id="myCheck" onclick="scheduleFunction()"></p>
-        <p id="text" style="display:none">Checkbox is CHECKED!</p>
-        <br/>
-        <br/>
+        
+        <h3 class="center">Which sessions would you be interested in scheduling?</h3>
+        <form name="listForm" class="center">
+          <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Resume Review added ($5)<br/>
+          <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Exploratory Session ($5)<br/>
+          <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Get the Interview ($5)<br/>
+          <input type="checkbox" class="largerCheckbox" name="choice" value="10" onchange="checkTotal()" />Tech Interviews ($10)<br/>
+          <input type="checkbox" class="largerCheckbox" name="choice" value="10" onchange="checkTotal()" />Salary Negotiations ($10)<br/>
+          <br/>
+          Total (USD$): <input type="text" size="2" name="total" value="0" />
+        </form>
+        <br>
+      <div class="center">
+        <button class="block" onclick="payNow() ">Click here to purchase now</button>
+      </div>
     <footer>
       <div class="w3-container">
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Who made this page?</button>
