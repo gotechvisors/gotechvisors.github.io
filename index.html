@@ -167,6 +167,85 @@
 <br>
 <br>
 <br>
+<!-- SCHEDULING SECTION -->
+<h3 class="center">Which sessions would you be interested in scheduling?</h3>
+<form name="listForm" class="center">
+  <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Resume Review added ($5)<br/>
+  <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Exploratory Session ($5)<br/>
+  <input type="checkbox" class="largerCheckbox" name="choice" value="5" onchange="checkTotal()" />Get the Interview ($5)<br/>
+  <input type="checkbox" class="largerCheckbox" name="choice" value="10" onchange="checkTotal()" />Tech Interviews ($10)<br/>
+  <input type="checkbox" class="largerCheckbox" name="choice" value="10" onchange="checkTotal()" />Salary Negotiations ($10)<br/>
+  <br/>
+  Total (USD$): <input type="text" size="2" name="total" value="0" />
+</form>
+<br>
+<div class="center">
+<button class="block" onclick="payNow() ">Click here to purchase now</button>
+</div>
+<!-- CONTACT INFORMATION SECTION -->
+<h2>Send e-mail to gotechvisors@gmail.com:</h2>
+<form class="contactform" action="mailto:gotechvisors@gmail.com?Subject=New%20Inquiry" method="post" enctype="text/plain">
+        Name (First & Last):<br>
+        <input type="text boxie" name="name" size="30"><br>
+        Contact E-mail:<br>
+        <input type="text boxie" name="mail" size="30"><br>
+        Comment:<br>
+        <input type="text boxie" name="comment" size="30"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+</form>
+<!-- MEET THE TEAM -->
+<div class="jumbotron text-center">
+  <h1>Meet The Team</h1>
+  <h7>See who would be a good fit to speak with</h3> 
+</div>
+<div class="cardcontainer">
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./images/awpic.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          <a href class="namelabel" href="https://www.linkedin.com/in/adamjkwong/">Adam J. Wong</a>
+        </div>
+        <div class="flip-card-back">
+          <a href class="namelabel" href="https://www.linkedin.com/in/adamjkwong/">Adam J. Wong</a>
+          <p class="p">MBA, UCLA Anderson</p>
+          <p class="p">MS Eng Mgmt, SCU</p>
+          <p class="p">BS Mech Eng, SCU</p>
+          <p class="p">Technical Program Manager (TPM) at Airbnb. 5 year U.S. Air Force Captain. After the military, Adam spent time with Accenture exploring consulting before becoming a TPM at YouTube. He then took a hardware TPM role with Cruise Automation prior to joining Airbnb. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./images/jspic.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          <a href class="namelabel" href="https://www.linkedin.com/in/janesohn/">Jane Sohn</a>
+        </div>
+        <div class="flip-card-back">
+          <a href class="namelabel" href="https://www.linkedin.com/in/janesohn/">Jane Sohn</a>
+          <p class="p">MBA, UCLA Anderson</p>
+          <p class="p">BA Economics, UC Berkeley</p>
+          <p class="p">Jane is currently a Deal and Spend Compliance Advisor at Google where she assesses high risk deals. Prior to this role, she worked in Finance ranging from startups to public companies such as IMVU, Gap, and PwC. She currently holds her CPA in the state of California. In her free time, she enjoys teaching fitness classes and fostering puppies.</p>
+      </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./images/kwpic.jpeg" alt="Avatar" style="width:300px;height:300px;">
+          <a href class="namelabel" href="https://www.linkedin.com/in/kimberlywo/">Kim Wo</a>
+        </div>
+        <div class="flip-card-back">
+          <a href class="namelabel" href="https://www.linkedin.com/in/kimberlywo/">Kim Wo</a>
+          <p class="p">MBA, UCLA Anderson</p>
+          <p class="p">BS Business, USC</p>
+          <p class="p">Recruiter Coordinator Lead Facebook. After college, Kimberly worked at Apple in their Apple Store Leadership Program. From there, she moved to Google in a sales and marketing role and then moved to the recruiting world. After Google, Kimberly took on a Recruiting Coordinator Lead role at Facebook.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+<!-- FOOTER SECTION -->
 <footer>
   <div class="w3-container">
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Who made this page?</button>
@@ -186,4 +265,21 @@
 </footer>
 </body>
 </html>
+<!-- JAVASCRIPT USED -->
+<script>
+function payNow() { 
+  window.open( 
+    "https://www.paypal.com/paypalme2/apangolin/10", "_blank"); 
+} 
 
+function checkTotal() {
+  document.listForm.total.value = '';
+  var sum = 0;
+  for (i=0;i<document.listForm.choice.length;i++) {
+    if (document.listForm.choice[i].checked) {
+      sum = sum + parseInt(document.listForm.choice[i].value);
+    }
+  }
+  document.listForm.total.value = sum;
+}
+</script>
