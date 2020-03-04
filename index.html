@@ -43,7 +43,7 @@
           <a class="nav-link" href="./schedule.html">Schedule Now</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="./team.html">Team</a>
+          <a class="nav-link" href="./index.html#teamSection">Team</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="./contact.html">Contact</a>
@@ -51,7 +51,10 @@
   </ul>
   </nav>
     </head>
-    <body>    
+<body>
+<!--Section 1-->    
+<div id="section1">
+<!--Section 1-->
     <section class="rw-wrapper">
       <div class="flowbigcontainer">
       <h2 class="rw-sentence">
@@ -163,10 +166,10 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
+<!--Section 1-->
+</div>
+<!--Section 1-->
+
 <!-- SCHEDULING SECTION -->
 <h3 class="center">Which sessions would you be interested in scheduling?</h3>
 <form name="listForm" class="center">
@@ -195,7 +198,7 @@
         <input type="reset" value="Reset">
 </form>
 <!-- MEET THE TEAM -->
-<div class="jumbotron text-center">
+<div id="teamSection" class="jumbotron text-center">
   <h1>Meet The Team</h1>
   <h7>See who would be a good fit to speak with</h3> 
 </div>
@@ -282,4 +285,30 @@ function checkTotal() {
   }
   document.listForm.total.value = sum;
 }
+
+// Smooth Scrolling
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>
